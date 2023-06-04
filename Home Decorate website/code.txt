@@ -1,0 +1,18 @@
+ <div class="col-lg-3">
+                            <fieldset>
+                                <label for="search Title" class="form-lable">search Work by Title</label><br>
+                                <input type="text" name="SEarchTitle" class="searchtext" placeholder="Type any work title" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-3">
+                            <fieldset>
+                                <label for="chooseCategory" class="form-lable">Choose Category</label>
+                                <select name="Category" class="form-select" aria-label="Defualt select example" id="chooseCategory" onchange="this.form.click()">
+                                    <option selected>Choose Category</option>
+                                    <option type="checkbox" name="option1" value="Interior Design">Interior Design</option>
+                                    <option value="Exterior Design">Exterior Design</option>
+                                    <option value="New Ideas">New Ideas</option>
+                                    <option value="Treandy Design">Treandy Design</option>
+                                </select>
+                            </fieldset>
+                        </div>

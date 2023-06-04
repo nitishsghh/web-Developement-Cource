@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav img {
+  width: 2em;
+}
+
+
+nav {
+  border: 1px solid black;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  color: rgb(242, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 3%;
+  position: fixed;
+  width: 100%;
+}
+
+@media (min-width:300px) and (max-width:800px) {
+  nav {
+    background-color: #750307;
+  }
+
+}
+
+nav h1 {
+  /* font-size: 20px; */
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  /* background: wheat; */
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateX(-150px);
+
+  }
+
+  80% {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+
+
+
+}
+
+h1 em {
+  color: rgba(255, 196, 0, 0.641);
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+}
+
+.navlink a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin: 5px 10px;
+  color: black;
+  background: white;
+  /* border: 2px solid black; */
+  border-radius: 7.5px;
+  display: inline-block;
+  transition: transform 1s;
+
+}
+
+.navlink a:hover {
+  transform: translateY(-5px);
+  color: white;
+  background: linear-gradient(to right, #ef32d9be, #ee4c41c3);
+
+}
+
+.navlink a::before {
+  border: 1px solid red;
+}
+
+
+
+
+.navbar a {
+  color: hotpink;
+  /* background: bisque; */
+  text-decoration: none;
+  font-size: 20px;
+  margin: 5px 15px;
+
+
+}
+
+
+.main-banner {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.505)), url("./img/main\ theam.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  padding: 170px 0px 270px 0px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .main-banner {
+    padding: 270px 0px 400px 0px;
+  }
+}
+
+.main-banner h6 {
+  font-size: 25px;
+  color: rgba(251, 255, 0, 0.649);
+  text-transform: uppercase;
+  font-weight: 700px;
+  letter-spacing: 2.5px;
+  animation-name: fadeIn;
+  /* -webkit-animation-duration: 10s; */
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+
+
+  }
+
+  100% {
+
+    color: white;
+    opacity: 1;
+
+  }
+
+}
+
+.main-banner h2 {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 2.5px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.main-banner h2 em {
+  font-style: normal;
+  color: rgba(255, 234, 0, 0.801);
+}
+
+.white-button a {
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background: white;
+  border: 2px solid black;
+  padding: 11px 25px;
+  border-radius: 7.5px;
+  display: inline-block;
+  transition: transform 1s;
+}
+
+.white-button a:hover {
+  transform: translateY(-5px);
+  color: white;
+  background: linear-gradient(to right, #ef32d9bb, #ee4c41c0);
+
+}
+
+.call-to-action .white-button {
+  text-align: center;
+}
+
+min-width: 992px {
+  .call-to-action .white-button {
+    text-align: right;
+  }
+}
+
+.search-form {
+  margin-top: -150px;
+}
+
+.search-form #search-form {
+  padding: 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 7.5px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 576px) {
+  .search-form #search-form {
+    padding: 60px;
+  }
+}
+
+.search-form #search-form label {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .search-form #search-form label {
+    margin-bottom: 20px;
+  }
+}
+
+.search-form #search-form input,
+.search-form #search-form select {
+  width: 100%;
+  height: 44px;
+  border-radius: 7.5px;
+  border: 1px solid #eeeeee;
+  font-size: 14px;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+
+.search-form #search-form button.main-button {
+  width: 100%;
+}
+
+section.explore-work .left-image img {
+  border-radius: 7.5px;
+}
+
+section.explore-work .right-content {
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  section.explore-work .right-content {
+    margin-left: 45px;
+    margin-top: 0px;
+  }
+}
+
+section.explore-work .right-content ul li {
+  display: block;
+  margin-bottom: 60px;
+}
+
+section.explore-work .right-content ul li:last-child {
+  margin-bottom: 0px;
+}
+
+section.explore-work .right-content ul li h4 {
+  font-size: 20px;
+  color: #2a2a2a;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+section.explore-work .right-content ul li ul.info li {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+section.explore-work .right-content ul li ul.info li span {
+  font-size: 15px;
+  color: #7a7a7a;
+  display: block;
+  width: 250px;
+  height: 50px;
+  float: none !important;
+}
+
+@media (min-width: 576px) {
+  section.explore-work .right-content ul li ul.info li span {
+    display: inline-block;
+    float: left !important;
+  }
+}
+
+section.explore-work .right-content ul li ul.info li span svg {
+  margin-right: 8px;
+}
+
+section.explore-work .right-content ul li ul.info li h6 {
+  display: inline-block;
+}
+
+section.explore-work .right-content ul li ul.info li h6 a {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2a2a2a;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+section.explore-work .right-content ul li ul.info li h6 a:hover {
+  color: #ff565b;
+}
+
+section.explore-work .right-content ul li ul.info li em {
+  font-size: 15px;
+  line-height: 28px;
+  color: #7a7a7a;
+  font-style: normal;
+  display: block;
+}
+
+@media (min-width: 576px) {
+  section.explore-work .right-content ul li ul.info li em {
+    display: inline;
+  }
+}
+
+.search-form {
+  margin-top: -150px;
+}
+
+.search-form #search-form {
+  padding: 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 7.5px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 576px) {
+  .search-form #search-form {
+    padding: 60px;
+  }
+}
+
+.search-form #search-form label {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .search-form #search-form label {
+    margin-bottom: 20px;
+  }
+}
+
+.search-form #search-form input,
+.search-form #search-form select {
+  width: 100%;
+  height: 44px;
+  border-radius: 7.5px;
+  border: 1px solid #eeeeee;
+  font-size: 14px;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+
+.search-form #search-form button.main-button {
+  width: 100%;
+}
+
+section.explore-work .left-image img {
+  border-radius: 7.5px;
+}
+
+section.explore-work .right-content {
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  section.explore-work .right-content {
+    margin-left: 45px;
+    margin-top: 0px;
+  }
+}
+
+section.explore-work .right-content ul li {
+  display: block;
+  margin-bottom: 60px;
+}
+
+section.explore-work .right-content ul li:last-child {
+  margin-bottom: 0px;
+}
+
+section.explore-work .right-content ul li h4 {
+  font-size: 20px;
+  color: #2a2a2a;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+section.explore-work .right-content ul li ul.info li {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+section.explore-work .right-content ul li ul.info li span {
+  font-size: 15px;
+  color: #7a7a7a;
+  display: block;
+  width: 250px;
+  height: 50px;
+  float: none !important;
+}
+
+@media (min-width: 576px) {
+  section.explore-work .right-content ul li ul.info li span {
+    display: inline-block;
+    float: left !important;
+  }
+}
+
+section.explore-work .right-content ul li ul.info li span svg {
+  margin-right: 8px;
+}
+
+section.explore-work .right-content ul li ul.info li h6 {
+  display: inline-block;
+}
+
+section.explore-work .right-content ul li ul.info li h6 a {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2a2a2a;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+section.explore-work .right-content ul li ul.info li h6 a:hover {
+  color: #ff565b;
+}
+
+section.explore-work .right-content ul li ul.info li em {
+  font-size: 15px;
+  line-height: 28px;
+  color: #7a7a7a;
+  font-style: normal;
+  display: block;
+}
+
+@media (min-width: 576px) {
+  section.explore-work .right-content ul li ul.info li em {
+    display: inline;
+  }
+}
+
+section.whats-trending .section-heading,
+section.whats-trending .left-content {
+  margin-right: 0px;
+}
+
+@media (min-width: 992px) {
+
+  section.whats-trending .section-heading,
+  section.whats-trending .left-content {
+    margin-right: 100px;
+  }
+}
+
+button.main-button {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff565b;
+  padding: 11px 25px;
+  border-radius: 7.5px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+
+}
+
+button.main-button:hover {
+  background-color: #2a2a2a;
+}
+
+.searchform {
+  margin-top: -30px;
+  dis
+}
+
+.searchform #searchform {
+  padding: 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 7.5px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 576px) {
+  .searchform #searchform {
+    padding: 60px;
+  }
+}
+
+.searchform #searchform label {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .searchform #searchform label {
+    margin-bottom: 20px;
+  }
+}
+
+.searchform #searchform input,
+.searchform #searchform select {
+  width: 100%;
+  height: 44px;
+  border-radius: 7.5px;
+  border: 1px solid #eeeeee;
+  font-size: 14px;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+
+.searchform #searchform button.mainbutton {
+  width: 100%;
+}
